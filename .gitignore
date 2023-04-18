@@ -1,0 +1,42 @@
+# General
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Distribution / packaging
+.Python
+*.egg-info/
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+MANIFEST
+
+# Logs
+*.log
+logs/
+
+# Other
+*.sqlite3
+*.sqlite3-journal
+*.db
+
+# PyCharm and other IDEs
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
