@@ -12,9 +12,14 @@
         {{ current_song.name }} -  {{ current_song.artists[0] }} - {{ current_song.album }}
       </p>
     {% endif %}
+    {% if skip_count %}
+    <h2> Votes to skip current song: </h2>
+    <h1> {{ skip_count }} </h1>
+    {% else %}
     <form action="/vote" method="post">
       <button type="submit">SKIP THIS SHIT</button>
     </form>
+    {% endif %}
     <h1>LOGIN (unused)</h1>
     <form action="/login" method="post">
       <label for="password">Password:</label>

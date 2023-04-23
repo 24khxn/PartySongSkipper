@@ -2,10 +2,11 @@
 Constants.py
 spotify_config.yaml
 .cache
-flask_session/
+**/flask_session/
+**/instance/
 
 # General
-__pycache__/
+**/__pycache__/
 *.pyc
 *.pyo
 *.pyd

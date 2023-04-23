@@ -51,13 +51,16 @@ with app.app_context():
 
 # db.create_all()
 
-@dataclass
+@dataclass(frozen=True)
 class Song:
     id: str
     href: str
     name: str
     artists: list[str]
     album: str
+    
+    def __hash__(self):
+        return hash(self.id)
     
     
 #region Login 
