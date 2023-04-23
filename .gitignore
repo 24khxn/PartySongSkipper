@@ -1,5 +1,6 @@
 # specific to app
 Constants.py
+spotify_config.yaml
 .cache
 flask_session/
 
