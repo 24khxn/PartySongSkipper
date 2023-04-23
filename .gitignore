@@ -1,3 +1,8 @@
+# specific to app
+Constants.py
+.cache
+flask_session/
+
 # General
 __pycache__/
 *.pyc

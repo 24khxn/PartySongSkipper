@@ -6,10 +6,16 @@
   </head>
   <body>
     <h1>Boys Party Official Song Skipping Tool</h1>
+    {% if current_song %}
+    <h2> Currently playing:</h2>
+      <p>
+        {{ current_song.name }} -  {{ current_song.artists[0] }} - {{ current_song.album }}
+      </p>
+    {% endif %}
     <form action="/vote" method="post">
       <button type="submit">SKIP THIS SHIT</button>
     </form>
-    <h1>LOGIN</h1>
+    <h1>LOGIN (unused)</h1>
     <form action="/login" method="post">
       <label for="password">Password:</label>
       <input type="password" name="password" required>
